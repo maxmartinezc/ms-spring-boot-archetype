@@ -1,4 +1,4 @@
-# Arquetype - Spring Boot Microservice
+# Archetype - Spring Boot Microservice
 Archetype for the creation of projects for spring boots. Tested with version 2.1.5.RELEASE
 
 # Features
@@ -36,3 +36,45 @@ If you choose postgresql "si", you get:
 
 ## Model Mapper Integration
 http://modelmapper.org/getting-started/
+
+# Install
+## Step 1:
+Archetype Catalog; Create or update your local catalog in .m2 folder with:
+```
+<?xml version="1.0" encoding="UTF-8"?>  
+<archetype-catalog xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0 http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd"  
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <archetypes>
+    <archetype>
+      <groupId>cl.example</groupId>
+      <artifactId>ms-spring-boot-arquetype</artifactId>
+      <version>1.0.0</version>
+      <description>Spring Boot Microservice Arquetype</description>
+    </archetype>
+  </archetypes>
+</archetype-catalog>
+```
+
+## Step 2
+Install arquetype
+1) Download project and import in eclipse.
+2) Install archetype as jar in your maven repository
+![install arq](https://user-images.githubusercontent.com/18618236/57996237-40a7d480-7a94-11e9-94ca-0dc9ff559733.png)
+
+
+## Step 3:
+![1](https://user-images.githubusercontent.com/18618236/57995800-076e6500-7a92-11e9-8859-d8b27b0a47c5.png)
+
+## Step 4:
+Click "next"
+![2](https://user-images.githubusercontent.com/18618236/57995816-1b19cb80-7a92-11e9-8043-bf6001c7de97.png)
+
+## Step 5:
+Select arquetype from maven catalog
+![3](https://user-images.githubusercontent.com/18618236/57995828-2836ba80-7a92-11e9-93b0-21cbc66cd90c.png)
+
+## Step 6:
+![4](https://user-images.githubusercontent.com/18618236/57995843-371d6d00-7a92-11e9-9ca5-914ab205b5cf.png)
+
+Enjoy!
