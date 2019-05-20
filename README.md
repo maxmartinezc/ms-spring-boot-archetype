@@ -21,11 +21,11 @@ Archetype for the creation of projects for spring boots. Tested with version 2.1
 
 ## Database Config
 ###  MySQL
-If you choose mysql "so", you get:
+If you choose mysql "si", you get:
 ![bd-config](https://user-images.githubusercontent.com/18618236/57994873-37673980-7a8d-11e9-8b72-4ccaf3516af6.png)
 
 ### PostgreSQL
-If you choose postgresql "so", you get:
+If you choose postgresql "si", you get:
 ![pgsql](https://user-images.githubusercontent.com/18618236/57995001-d7bd5e00-7a8d-11e9-9d9a-0f2264624794.png)
 
 ## Profile setup ready
