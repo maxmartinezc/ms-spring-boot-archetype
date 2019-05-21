@@ -88,4 +88,4 @@ Select arquetype from maven catalog
 ## Step 6:
 ![4](https://user-images.githubusercontent.com/18618236/57995843-371d6d00-7a92-11e9-9ca5-914ab205b5cf.png)
 
-Enjoy!
+Click finish and enjoy!
