@@ -14,9 +14,14 @@ Archetype for the creation of projects for spring boots. Tested with version 2.1
 
 ## Custom Exceptions Handler
 ### Error codes enum
+* BusinessException: Exception as "BAD REQUEST" (HTTP 400). It must be launched manually.
+* MethodArgumentNotValidException: Exception as "BAD REQUEST" (HTTP 400). This is automatically launches when Java bean validation fail
+* CustomNotFoundException: Exception as "NOT FOUND" (HTTP 404). It must be launched manually.
+* ErrorCodesEnum:
+
 ![error codes enum](https://user-images.githubusercontent.com/18618236/57994605-e276f380-7a8b-11e9-8f08-63a3df4aa9e5.png)
 
-### Output example
+### Output example for MethodArgumentNotValidException when Java bean validation fail
 ![custom exception](https://user-images.githubusercontent.com/18618236/57994562-c1ae9e00-7a8b-11e9-846a-3e3b084b0d4a.png)
 
 ## Database Config
@@ -36,6 +41,11 @@ If you choose postgresql "si", you get:
 
 ## Model Mapper Integration
 http://modelmapper.org/getting-started/
+
+## Bonus
+* RUN Validator (RUN is a valid "ID" for chilean people):
+  * Java API for bean validation (@Run)
+  * FunctionUtil class with validation function for RUN
 
 # Install
 ## Step 1:
@@ -67,7 +77,8 @@ Install arquetype
 ![1](https://user-images.githubusercontent.com/18618236/57995800-076e6500-7a92-11e9-8859-d8b27b0a47c5.png)
 
 ## Step 4:
-Click "next"
+Click next
+
 ![2](https://user-images.githubusercontent.com/18618236/57995816-1b19cb80-7a92-11e9-8043-bf6001c7de97.png)
 
 ## Step 5:
