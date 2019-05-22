@@ -10,7 +10,7 @@ Archetype for the creation of projects for spring boots. Tested with version 2.1
 ![project-structure](https://user-images.githubusercontent.com/18618236/57994360-d3437600-7a8a-11e9-91b4-a694a2099fc3.png)
 
 ## Swagger setup ready
-![swagger](https://user-images.githubusercontent.com/18618236/57994439-23223d00-7a8b-11e9-9370-b65979d1c9eb.png)
+![swagger-v2](https://user-images.githubusercontent.com/18618236/58139857-afa73980-7c0a-11e9-8ac0-234f30e69cb7.png)
 
 ## Custom Exceptions Handler
 ### Error codes enum
@@ -25,6 +25,14 @@ Archetype for the creation of projects for spring boots. Tested with version 2.1
 ![custom exception](https://user-images.githubusercontent.com/18618236/57994562-c1ae9e00-7a8b-11e9-846a-3e3b084b0d4a.png)
 
 ## Database Config
+### H2
+If you don't choose database, you get H2 as default:
+![h2-cfg](https://user-images.githubusercontent.com/18618236/58139761-3e678680-7c0a-11e9-8526-808468148e63.png)
+
+#### Login to H2 console
+Ex.: http://localhost:5000/demo/v1/h2-console (pwd: demo)
+![h2-login](https://user-images.githubusercontent.com/18618236/58139768-4c1d0c00-7c0a-11e9-89be-16ff0083a473.png)
+
 ###  MySQL
 If you choose mysql "si", you get:
 ![bd-config](https://user-images.githubusercontent.com/18618236/57994873-37673980-7a8d-11e9-8b72-4ccaf3516af6.png)
@@ -34,7 +42,7 @@ If you choose postgresql "si", you get:
 ![pgsql](https://user-images.githubusercontent.com/18618236/57995001-d7bd5e00-7a8d-11e9-9d9a-0f2264624794.png)
 
 ## Profile setup ready
-![profiles](https://user-images.githubusercontent.com/18618236/57994763-b0b25c80-7a8c-11e9-9a8b-b1bc262fa6fd.png)
+![pom-profiles](https://user-images.githubusercontent.com/18618236/58139969-33f9bc80-7c0b-11e9-8eb7-97ecb96664f0.png)
 
 ## CORS setup ready
 ![cors](https://user-images.githubusercontent.com/18618236/57994471-55339f00-7a8b-11e9-9dae-408eadb85bff.png)
