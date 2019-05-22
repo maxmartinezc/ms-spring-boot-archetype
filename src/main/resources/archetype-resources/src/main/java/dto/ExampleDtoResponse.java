@@ -1,5 +1,9 @@
 package ${package}.dto;
 
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -15,6 +19,10 @@ public class ExampleDtoResponse
 	
 	@ApiModelProperty(notes = "Descripción", example="Loren ipsum")
 	private String description;
+	
+	@ApiModelProperty(notes = "Fecha y hora de creación", example="2019-05-01 17:30:00")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+	private Date creationDate;
 
 	/**
 	 * Constructor de ExampleDtoResponse sin argumentos
@@ -50,7 +58,15 @@ public class ExampleDtoResponse
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
-	
+
+	public Date getCreationDate() {
+		return creationDate;
+	}
+
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -58,6 +74,8 @@ public class ExampleDtoResponse
 		builder.append(id);
 		builder.append(", description=");
 		builder.append(description);
+		builder.append(", creationDate=");
+		builder.append(creationDate);
 		builder.append("]");
 		return builder.toString();
 	}

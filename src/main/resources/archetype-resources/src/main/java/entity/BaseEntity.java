@@ -1,6 +1,6 @@
 package ${package}.entity;
 
-import java.util.Calendar;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -11,34 +11,34 @@ import javax.persistence.PreUpdate;
 public abstract class BaseEntity {
 	
     @Column(name="creation_date", updatable=false)
-    private Calendar creationDate;
+    private Date creationDate;
 
     @Column(name="last_modified_date", insertable=false)
-    private Calendar lastModifiedDate;
+    private Date lastModifiedDate;
     
     @PrePersist
 	void onCreate() {
-    	this.setCreationDate(Calendar.getInstance());
+    	this.setCreationDate(new Date());
 	}
 
 	@PreUpdate
 	void onPersist() {
-		this.setLastModifiedDate(Calendar.getInstance());
+		this.setLastModifiedDate(new Date());
 	}
 
-	public Calendar getCreationDate() {
+	public Date getCreationDate() {
 		return creationDate;
 	}
 
-	public void setCreationDate(Calendar creationDate) {
+	public void setCreationDate(Date creationDate) {
 		this.creationDate = creationDate;
 	}
 
-	public Calendar getLastModifiedDate() {
+	public Date getLastModifiedDate() {
 		return lastModifiedDate;
 	}
 
-	public void setLastModifiedDate(Calendar lastModifiedDate) {
+	public void setLastModifiedDate(Date lastModifiedDate) {
 		this.lastModifiedDate = lastModifiedDate;
 	}
 }
