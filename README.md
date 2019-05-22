@@ -45,7 +45,7 @@ If you choose postgresql "si", you get:
 ![pom-profiles](https://user-images.githubusercontent.com/18618236/58139969-33f9bc80-7c0b-11e9-8eb7-97ecb96664f0.png)
 
 ## CORS setup ready
-![cors](https://user-images.githubusercontent.com/18618236/57994471-55339f00-7a8b-11e9-9dae-408eadb85bff.png)
+![cors-time-zone](https://user-images.githubusercontent.com/18618236/58140220-458f9400-7c0c-11e9-8b3a-32f4e034acfb.png)
 
 ## Model Mapper Integration
 http://modelmapper.org/getting-started/
@@ -94,6 +94,6 @@ Select arquetype from maven catalog
 ![3](https://user-images.githubusercontent.com/18618236/57995828-2836ba80-7a92-11e9-93b0-21cbc66cd90c.png)
 
 ## Step 6:
-![4](https://user-images.githubusercontent.com/18618236/57995843-371d6d00-7a92-11e9-9ca5-914ab205b5cf.png)
+![maven-new-project](https://user-images.githubusercontent.com/18618236/58140156-0b25f700-7c0c-11e9-8384-89d3657f31fa.png)
 
 Click finish and enjoy!
