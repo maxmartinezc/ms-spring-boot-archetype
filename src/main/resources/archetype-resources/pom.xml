@@ -33,7 +33,7 @@
 				<activatedProperties>qa</activatedProperties>
 			</properties>
 		</profile>
-		<!-- perfil qa: Servidor de produccion  -->
+		<!-- perfil prod: Servidor de produccion  -->
 		<profile>
 			<id>prod</id>
 			<properties>
