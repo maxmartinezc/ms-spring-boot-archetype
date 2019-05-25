@@ -10,6 +10,7 @@ Archetype for the creation of projects for spring boots. Tested with version 2.1
 ![project-structure](https://user-images.githubusercontent.com/18618236/57994360-d3437600-7a8a-11e9-91b4-a694a2099fc3.png)
 
 ## Swagger setup ready
+If your project name is demo, you can access in http://localhost:5000/demo/v1/swagger-ui.html
 ![swagger-v2](https://user-images.githubusercontent.com/18618236/58139857-afa73980-7c0a-11e9-8ac0-234f30e69cb7.png)
 
 ## Custom Exceptions Handler
