@@ -57,7 +57,7 @@ http://modelmapper.org/getting-started/
 
 # Install
 ## Step 1:
-Archetype Catalog; Create or update your local catalog in .m2 folder with:
+Archetype Catalog; Create or update your local catalog (archetype-catalog.xml) in .m2 folder with:
 ```
 <?xml version="1.0" encoding="UTF-8"?>  
 <archetype-catalog xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-catalog/1.0.0 http://maven.apache.org/xsd/archetype-catalog-1.0.0.xsd"  
