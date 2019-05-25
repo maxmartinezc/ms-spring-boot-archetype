@@ -22,8 +22,8 @@ public class ${appName}Application {
 	
 	@PostConstruct
     public void init(){
-        TimeZone.setDefault(TimeZone.getTimeZone("GMT-4"));   // It will set GMT-4 timezone
-        System.out.println("Spring boot application running in GMT-4 timezone :" + new Date());
+        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+        System.out.println("Spring boot application running in UTC timezone :" + new Date());
     }
 	
 	@Bean
