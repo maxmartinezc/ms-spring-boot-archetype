@@ -35,7 +35,7 @@ public class ExamplesController {
 	@Autowired
 	ExampleService exampleService;
 	
-	@ApiOperation(value = "Retorna la lista de examples", response = String.class)
+	@ApiOperation(value = "Retorna la lista de examples", response = ExampleDtoResponse.class)
 	@GetMapping("/")
 	@ApiResponses(value = {
         @ApiResponse(code = 200, message = "Retorna la lista de examples")
@@ -48,7 +48,7 @@ public class ExamplesController {
 		return new ResponseEntity<Page<ExampleDtoResponse>>(list, HttpStatus.OK);
 	}
 	
-	@ApiOperation(value = "Retorna la información de un example", response = String.class)
+	@ApiOperation(value = "Retorna la información de un example", response = ExampleDtoResponse.class)
 	@GetMapping("/{id}")
 	@ApiResponses(value = {
         @ApiResponse(code = 200, message = "Retorna un example")

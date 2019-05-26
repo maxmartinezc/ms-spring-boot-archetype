@@ -20,6 +20,9 @@ public class ExampleDtoResponse
 	@ApiModelProperty(notes = "Descripción", example="Loren ipsum")
 	private String description;
 	
+	@ApiModelProperty(notes = "RUN", example="2345678-9")
+	private String run;
+	
 	@ApiModelProperty(notes = "Fecha y hora de creación", example="2019-05-01 17:30:00")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date creationDate;
@@ -63,6 +66,14 @@ public class ExampleDtoResponse
 		return creationDate;
 	}
 
+	public String getRun() {
+		return run;
+	}
+
+	public void setRun(String run) {
+		this.run = run;
+	}
+
 	public void setCreationDate(Date creationDate) {
 		this.creationDate = creationDate;
 	}
@@ -74,6 +85,8 @@ public class ExampleDtoResponse
 		builder.append(id);
 		builder.append(", description=");
 		builder.append(description);
+		builder.append(", run=");
+		builder.append(run);
 		builder.append(", creationDate=");
 		builder.append(creationDate);
 		builder.append("]");

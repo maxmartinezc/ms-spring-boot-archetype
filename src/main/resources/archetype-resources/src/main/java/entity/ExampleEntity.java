@@ -17,6 +17,9 @@ public class ExampleEntity extends BaseEntity {
 	
 	@Column(name="description")
 	private String description;
+	
+	@Column(name="run")
+	private String run;
 
 	public ExampleEntity() {
 		super();
@@ -36,5 +39,13 @@ public class ExampleEntity extends BaseEntity {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getRun() {
+		return run;
+	}
+
+	public void setRun(String run) {
+		this.run = run;
 	}
 }
